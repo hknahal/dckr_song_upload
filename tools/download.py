@@ -72,7 +72,8 @@ def main():
     #analysis_id = json.load(open(payload_file)).get('analysisId')
    
 
-    subprocess.check_output(['/home/hnahal/score-client-5.1.0/bin/score-client','--profile', 'collab', 'download','--manifest',os.path.join(results.input_dir,manifest) , '--output-dir', os.path.join(output_dir)])
+    #subprocess.check_output(['/home/hnahal/score-client-5.1.0/bin/score-client','--profile', 'collab', 'download','--manifest',os.path.join(results.input_dir,manifest) , '--output-dir', os.path.join(output_dir)])
+    subprocess.check_output(['score-client','--profile', 'collab', 'download','--manifest',os.path.join(results.input_dir,manifest) , '--output-dir', os.path.join(output_dir)])
 
 if __name__ == "__main__":
     main()
