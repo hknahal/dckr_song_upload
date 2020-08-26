@@ -59,20 +59,20 @@ def main():
     #parser.add_argument('-p', '--payload', dest="payload", help="JSON Payload", required=True)
     parser.add_argument('-m', '--manifest', dest="manifest", help="manifest file", required=True)
     #parser.add_argument('-o', '--output', dest="output", help="Output manifest file", required=True)
-    #parser.add_argument('-d', '--input-dir', dest="input_dir", help="Payload files directory", required=True)
+    parser.add_argument('-d', '--input-dir', dest="input_dir", help="Payload files directory", required=True)
     parser.add_argument('-t', '--access-token', dest="access_token", default=os.environ.get('ACCESSTOKEN',None),help="Server URL")
-    #parser.add_argument('-j','--json',dest="json_output")
+    parser.add_argument('-o','--output-dir',dest="output_dir")
     results = parser.parse_args()
 
     #study_id = results.study_id
     #server_url = results.server_url
     access_token = results.access_token
     manifest = results.manifest
-    #payload_file = results.payload
+    output_dir = results.output_dir
     #analysis_id = json.load(open(payload_file)).get('analysisId')
+   
 
-
-    subprocess.check_output(['score-client','download','--manifest',os.path.join(results.input_dir,manifest)])
+    subprocess.check_output(['/home/hnahal/score-client-5.1.0/bin/score-client','--profile', 'collab', 'download','--manifest',os.path.join(results.input_dir,manifest) , '--output-dir', os.path.join(output_dir)])
 
 if __name__ == "__main__":
     main()
