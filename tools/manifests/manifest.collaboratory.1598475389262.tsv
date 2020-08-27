@@ -1,0 +1,3 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+collaboratory	FI815922	c511b0d5-8bd4-5ff8-ac5a-bbd1f201d480	VCF	246a9cbe-2f70-472b-9ce2-22b58dca9279.pilot50.20160609.somatic.snv_mnv.vcf.gz	42503	605458868a768cc8db69fdcf4309146d	d06c35ae-e126-5579-aba6-d24c3a56c08d	DO50430	PRAD-UK	PCAWG
+collaboratory	FI815917	b2f70bd4-dfd1-5584-8a7a-bdaef1ef0276	VCF	246a9cbe-2f70-472b-9ce2-22b58dca9279.pilot50.20160609.somatic.sv.vcf.gz	3615	11a891848af1914df62dceb700084df6	281208aa-310e-5c3b-b8cb-bec16c89feef	DO50430	PRAD-UK	PCAWG
