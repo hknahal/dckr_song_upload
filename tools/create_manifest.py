@@ -59,7 +59,7 @@ def main():
     api = Api(api_config)
 
     manifest_filename = results.output
-    create_manifest(api,analysis_id,manifest_filename,results.input_dir)
+    create_manifest(api,"EGAZ00001257788",manifest_filename,results.input_dir)
 
 if __name__ == "__main__":
     main()
