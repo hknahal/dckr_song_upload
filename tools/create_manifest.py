@@ -14,7 +14,7 @@ import requests
 def create_manifest(api, analysis_id, manifest_file, files_dir):
    manifest_client = ManifestClient(api)
    manifest_file_path = os.path.join(files_dir,manifest_file)
-   manifest_client.write_manifest(analyis_id, files_dir, manifest_file_path)
+   manifest_client.write_manifest(analysis_id, files_dir, manifest_file_path)
    return
 
 def retrieve_object_id(api, analysis_id, file_name, file_md5sum):
