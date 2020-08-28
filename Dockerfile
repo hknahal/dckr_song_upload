@@ -28,7 +28,7 @@ RUN update-alternatives --config python3
 RUN apt-get install -y python3-pip
 RUN pip3 install dataclasses==0.3
 
-RUN pip install overture-song
+RUN pip3 install overture-song
 
 RUN mkdir /score-client
 RUN wget -O score-client.tar.gz https://artifacts.oicr.on.ca/artifactory/dcc-release/bio/overture/score-client/[RELEASE]/score-client-[RELEASE]-dist.tar.gz
